@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: var(--background);
+    font-family: sahel;
+}
+@font-face {
+    font-family: sahel;
+    src: url(../font/Sahel.ttf);
+}
+/*color*/
+:root{
+    --color-dark: #262626;
+    --color-black: #000;
+    --color-primary: #d3ab55;
+    --color-secondary: #bbb;
+    --color-white : #fff;  
+    --header-text-color: #6e6e6e;  
+    --header-accent-color: #92b385;
+    --input-search:#f1f1f1;
+    --accent-color: #92b385;
+    --background: #f7f6f6;
+    --header-border-color: rgba(110, 110, 110, 0.3);
+  }
+  
+
+/*header*/
+
+.top-header{
+    background-image: linear-gradient(to right, #92b385, #eacda3);
+
+}
+.search-header{
+    background-color: var(--color-white);
+}
+.icon-acheter{
+    font-size: 35px;
+    color:var(--header-text-color);   
+}
+.icon-search{
+    flex: none;
+    width: 60px;
+    background: var(--header-accent-color);
+    height: 35px;
+    border-radius: 100px;
+    color: #fff;
+    margin-right: 4px;
+    border: none;
+    left: 10px; 
+    top: 2px;
+}
+.input-search{
+    height: 40px;
+    background-color:var(--input-search);
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding: 20px;
+}
+.icon-acheter{
+font-size: 20px;
+font-weight: 600;
+color: var(--header-text-color);
+
+}
+.text-acheter{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--header-text-color);
+}
+
+.icon-truck-content{
+    position: relative;
+}
+.icon-truck-content::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: calc(50% - 17px);
+    background: var(--header-border-color);
+    height: 34px;
+    width: 1px;
+}
+.collection-img{
+    border-radius: 50%;
+}
+/*collection*/
+.collection-list{
+    overflow-x:auto;
+}
+
+/*Inventory*/
+.product-img{
+    border-radius: 10px;
+}
+.title-inventory h3{
+    position: relative;
+    color: var(--header-text-color);
+}
+.title-inventory h3::before{
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 20%;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--accent-color);
+    border-radius:10px ;
+}
+.title-inventory a{
+    color: var(--accent-color);
+}
+.product-content{
+    border-radius: 10px;
+    background-color: var(--color-white);
+}
+.description-product a{
+    color: var(--color-black);
+    transition: all .3s;
+}
+.product-content:hover .description-product a{
+color: var(--accent-color);
+}
+/* footer */
+.footer{
+    background-color: var(--color-white);
+}
+.footer-link{
+    color: var(--mainYellow);
+    font-size: 1.5rem;
+    transition: color 1s;
+}
+.footer-link:hover{
+color: var(--mainBlue);
+}
